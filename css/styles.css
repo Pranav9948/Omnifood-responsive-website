@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/************* reusuable layout ************/
+
+.--grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.items {
+  background-color: antiquewhite;
+  height: 200px;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.--grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.4rem;
+}
+
+/****************
+
+/***************
+header section code
+****************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fdf2e9;
+  padding: 3rem;
+}
+
+header img {
+  height: 2.4rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+header nav ul > li {
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #333;
+  padding: 1.2rem 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header nav ul > li:hover {
+  color: #e67e22;
+}
+
+header li > a {
+  text-decoration: none;
+}
+
+header li > a > button {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+}
+
+header li > a > button:hover {
+  background-color: #e77d04;
+}
+
+/***************
+hero section code
+****************/
+
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 0 3rem;
+}
+
+.hero-section-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 120rem;
+  padding-top: 4.8rem;
+  padding-bottom: 9.6rem;
+
+  margin: 0 auto;
+}
+
+.hero-section-image img {
+  width: 100%;
+}
+
+.hero-section-text h1 {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  font-size: 800;
+  color: #333;
+  letter-spacing: 0.5px;
+  margin-bottom: 3.2rem;
+  padding-top: 2.2rem;
+}
+
+.hero-section-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-size: 400;
+  color: #333;
+  margin-bottom: 4.8rem;
+}
+
+.button-group {
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-group a {
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  line-height: 1;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.user-testimonial {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.users-images-section img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  margin-left: -10px;
+  border: 2px solid white;
+}
+
+.user-testimonial p {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-size: 400;
+  color: #555555;
+  font-weight: 600;
+}
+
+.main-btn:link,
+:visited {
+  background-color: #e67e22;
+  color: white;
+}
+
+.learn-btn:link,
+:visited {
+  background-color: white;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+}
+
+.main-btn:hover,
+:active {
+  background-color: #c16802;
+  color: white;
+}
+
+.learn-btn:hover,
+:active {
+  background-color: blue;
+  color: white;
+  border: 2px solid white;
+}
+
+.home-theme {
+  color: #e67e22;
+}
+
+.grid-view-section {
+  padding: 3rem;
+}
+
+.step-container {
+  margin-top: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.8rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  line-height: 1;
+  color: #dddd;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+}
+
+.step-heading {
+  color: #333;
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: -0.5;
+  margin-bottom: 3.2rem;
+}
+
+.step-description {
+  color: #555;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+.step-section {
+  padding: 9.6rem 0;
+}
+
+.step-section span {
+  color: #cf711f;
+  font-size: 1.6rem;
+  letter-spacing: 0.75px;
+  line-height: 1;
+
+  font-weight: 600;
+}
+
+.step-section h2 {
+  color: #333;
+  margin-bottom: 9.6rem;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  margin-top: 1.6rem;
+  font-weight: 800;
+}
+
+.step-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step-img-section::before {
+  content: "";
+  width: 27rem;
+  height: 27rem;
+  background-color: #febf8e;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.step-img-section::after {
+  content: "";
+  width: 34rem;
+  height: 34rem;
+  background-color: #f7dec3;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.step-img-section img {
+  width: 35%;
+}
+
+/********** partners-section code *********/
+
+.partners-section {
+  padding: 4.8rem 3rem 3.2rem;
+}
+
+.partners-section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #8888;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+}
+
+.partner-companies-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.partner-companies-logos img {
+  height: 3rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/********** meals-card section code *********/
+
+.meals-card-section {
+  padding: 9.6rem 3rem;
+}
+
+.meals-card {
+
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border-top-left-radius: 2rem;
+border-top-right-radius: 2rem;
+overflow: hidden;
+transition: all 2s ;
+
+
+}
+
+.meals-card:hover{
+
+   transform: translateY(-20px);
+}
+
+.meals-span {
+  text-transform: uppercase;
+  color: #cf711f;
+  font-size: 1.7rem;
+  line-height: 1;
+  letter-spacing: 0.75px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.meals-card-section h2 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.meals-card-img img {
+  width: 100%;
+}
+
+.meals-card-details {
+  padding: 4.8rem;
+}
+
+.meal-type {
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10rem;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 700;
+
+}
+
+.meal-vegetarian {
+  background-color: #8DECB4;
+  color: black;
+}
+
+.meals-card-details p {
+  margin: 1.8rem 0 3.2rem;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: #333;
+  font-weight: 700;
+}
+
+.meal-details ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+.meal-icon{
+
+  color: #e67e22;
+  font-size: 2.4rem;
+  
+}
+
+.meal-each-details{
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+}
+
+.meal-each-details .bolded{
+
+  color: #555;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 700;
+
+
+}
+
+.meal-each-details span{
+
+   color: #555;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-left: -10px;
+}
+
+.meals-category{
+
+  display: flex;
+  gap: 2rem;
+}
+
+.meal-vegan{
+
+  background-color: #C5FF95;
+  color: #333;
+}
+
+.meal-paleo{
+
+  background-color: #FA7070;
+  color: #fff;
+
+}
+
+.ad-meals-card p{
+
+   margin-bottom: 4rem;
+   font-size: 3rem;
+   line-height: 1;
+   letter-spacing: -0.5px;
+   color: #333;
+   font-weight: 700;
+}
+
+.ad-meals-card ul{
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+.ad-meal-type{
+
+  font-size: 1.8rem;
+  color: #555;
+  line-height: 1;
+  
+}
+
+.ad-meals-card li{
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-weight: 400;
+
+
+}
+
+.meal-card-button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.meal-card-button a{
+
+  text-decoration: none;
+ 
+  font-size: 1.8rem;
+   line-height: 1;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   transition: all 0.5s;
+
+}
+
+.meal-card-button a:link:visited{
+
+    color: #e67e22;
+}
+
+.meal-card-button a:hover{
+
+  border-bottom:  2px solid #E8751A ;
+  color: #E8751A;
+  padding-bottom: 0.5rem;
+}
