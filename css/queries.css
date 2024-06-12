@@ -1,0 +1,523 @@
+@media screen and (max-width: 82em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 80em) {
+  html {
+    font-size: 59%;
+  }
+}
+
+@media screen and (max-width: 73em) {
+  html {
+    font-size: 54%;
+    overflow-x: hidden;
+  }
+
+  .meals-card-section .--grid-cols-3 {
+    gap: 5.4rem;
+  }
+
+  .contact-form-section {
+    margin: 0 5rem;
+  }
+}
+
+/* Tablet screen */
+
+@media screen and (max-width: 65em) {
+  html {
+    font-size: 52%;
+  }
+
+  .partner-companies {
+    padding: 0 5rem;
+  }
+
+  .partner-companies-logos {
+  }
+
+  .hero-section-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    margin: 0 auto;
+  }
+
+  .hero-section-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-size: 400;
+    color: #333;
+    max-width: 70rem;
+    margin: 0 auto 4.8rem;
+  }
+
+  .hero-section-text {
+    text-align: center;
+  }
+  .hero-section-image {
+    text-align: center;
+  }
+
+  .hero-section-image img {
+    width: 60%;
+    margin-top: 2rem;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    padding: 5rem;
+  }
+
+  .hero-section {
+    padding: 0 5rem;
+  }
+
+  .step-section {
+    padding: 9.6rem 5rem;
+  }
+
+  .partners-section {
+    padding: 4.8rem 5rem 3.2rem;
+  }
+
+  .meals-card-section {
+    padding: 9.6rem 5rem;
+  }
+
+  .photo-gallery-section {
+    background-color: #fdf2e9;
+    padding: 9.6rem 5rem;
+  }
+
+  .pricing-cards-section {
+    padding: 9.6rem 5rem;
+   
+  }
+
+  .featured-section {
+    padding: 0 5rem 9.6rem;
+  }
+
+  .footer-section {
+    padding: 12.8rem 5rem;
+  }
+
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  .photo-gallery-testimonial-section .--gridder-cols-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .photo-gallery .three-col-layouts {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+    padding: 9.6rem 1.6rem;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-form input {
+    padding: 1.8rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .contact-form select {
+    width: 80%;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .sign-up button {
+    width: 80%;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+  }
+
+  .testimonial-section {
+    padding: 0rem 5.6rem;
+    margin: 0;
+  }
+
+  .photo-gallery-section {
+    padding: 7.4rem 5rem 0rem;
+  }
+
+  .photo-gallery-testimonial-section .--gridder-cols-2 {
+    gap: 0;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 1) Hide it visually * /
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* smaller tablet devices */
+
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 44%;
+  }
+
+  .hero-section-image img {
+    width: 70%;
+  }
+
+  .partner-companies-logos img {
+    height: 2.6rem;
+  }
+
+  .meals-card-section .--grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ad-meals-card {
+    margin-top: 3.6rem;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-self: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 4rem;
+    border-radius: 2rem;
+  }
+
+  .featured-section .four-grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-card {
+    padding: 3rem;
+  }
+
+  /* .contact-form-img{
+
+    background-image: none;
+  } */
+
+  .footer-section .five-col-layout {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .Account {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .Resources {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .company-details,
+  .address {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .address {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  html {
+    font-size: 40%;
+  }
+  .ad-meals-card {
+    width: 50%;
+  }
+
+  .contact-form-box {
+    grid-template-columns: 1fr;
+    background-color: red;
+  }
+
+  .partner-companies-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 5rem;
+  }
+
+  .partner-companies-logos img {
+    height: 3.5rem;
+  }
+
+  .contact-form input {
+    width: 100%;
+  }
+
+  .contact-form select {
+    width: 100%;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .contact-form-box .sign-up {
+    margin-top: 2rem;
+  }
+
+  .contact-form-img {
+    background-image: none;
+  }
+}
+
+/* for mobile  devices */
+
+@media screen and (max-width: 35em) {
+  html {
+    font-size: 35%;
+  }
+
+  .partner-companies-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 5rem;
+    margin-top: 5rem;
+  }
+}
+
+/* for 470px */
+
+@media screen and (max-width: 30em) {
+  html {
+    font-size: 35%;
+  }
+
+  .step-section .--grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-section {
+    order: 1;
+  }
+
+  .step-text-content {
+    order: 2;
+    margin-bottom: 4rem;
+  }
+
+  .user-testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .users-images-section img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .user-testimonial p {
+    font-size: 2.5rem;
+  }
+
+  .meals-card-section .--grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .ad-meals-card {
+    width: 100%;
+  }
+
+  .ad-meals-card ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-gallery-section .two-col-grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery-section blockquote p {
+    font-size: 2.4rem;
+  }
+
+  .pricing-cards-section {
+    text-align: center;
+  }
+
+  .photo-gallery .three-col-layouts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featured-section .four-grid-cards {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .show-features .feature-card {
+    width: 70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+
+ .meal-each-details {
+  
+  gap: 3.6rem;
+}
+
+.social-icons li {
+
+ 
+  margin-bottom: 3dvi;
+} 
+
+
+
+
+  .company-details {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .address {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+
+/* for 375px */
+
+@media screen and (max-width: 25em) {
+
+    .partner-companies-logos {
+
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .hero-section-text h1{
+
+    font-size: 4.4rem;
+  }
+
+   .price-subtitle{
+
+     margin-top: 5rem;
+     font-size: 1.2rem;
+    
+  }
+}
+
+
+
+
+@media screen and (max-width: 20em) {
+
+   
+  .hero-section-text h1{
+
+    font-size: 3.6rem;
+  }
+
+  
+}
